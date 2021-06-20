@@ -1,7 +1,7 @@
-import 'package:eventra/Screens/calender.dart';
-import 'package:eventra/Screens/home.dart';
-import 'package:eventra/Screens/profile.dart';
-import 'package:eventra/Screens/timetable.dart';
+import 'package:eventra/screens/calender.dart';
+import 'package:eventra/screens/home_normal_user.dart';
+import 'package:eventra/screens/profile.dart';
+import 'package:eventra/screens/timetable.dart';
 import 'package:flutter/material.dart';
 
 class Nav extends StatefulWidget {
@@ -13,7 +13,7 @@ class _NavState extends State<Nav> {
   Home home = Home();
   int _currentIndex = 0;
   List<String> appbarText = ['Home', 'Calender', 'TimeTable', 'Profile'];
-  List<Widget> displayWidget = [Home(), Calendar(), Timetable(), Profile()];
+  List<Widget> displayWidget = [HomeNormalUser(), Calendar(), Timetable(), Profile()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
