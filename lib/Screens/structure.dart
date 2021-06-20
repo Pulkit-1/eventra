@@ -10,10 +10,14 @@ class Nav extends StatefulWidget {
 }
 
 class _NavState extends State<Nav> {
-  Home home = Home();
   int _currentIndex = 0;
   List<String> appbarText = ['Home', 'Calender', 'TimeTable', 'Profile'];
-  List<Widget> displayWidget = [HomeNormalUser(), Calendar(), Timetable(), Profile()];
+  List<Widget> displayWidget = [
+    HomeNormalUser(),
+    Calendar(),
+    Timetable(),
+    Profile()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
